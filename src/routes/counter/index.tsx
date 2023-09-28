@@ -5,14 +5,18 @@ export default component$(() => {
   console.log("Qwik Render: never in the browser");
   const count = useSignal(0);
   return (
-    <main style={{ textAlign: "center", margin: '20px 0' }}>
-      <Island_1
-        onClick$={() => {
-          console.log("Island_1: click", count.value);
-          count.value++;
-        }}
-      />
-      <Island_2 count={count.value}></Island_2>
+    <main style={{ textAlign: "center", margin: "20px 0" }}>
+      <div style="border: 1px solid green">
+        <Island_1
+          onClick$={() => {
+            console.log("Island_1: click", count.value);
+            count.value++;
+          }}
+        />
+      </div>
+      <div style="border: 1px solid red">
+        <Island_2 count={count.value}></Island_2>
+      </div>
     </main>
   );
 });

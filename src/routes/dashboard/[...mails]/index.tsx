@@ -8,10 +8,6 @@ export default component$(() => {
 	return (
 		<>
 			<Mails client:hover path={location.params.mails} />
-			<MySlider
-				client:visible
-				style={{ width: 'calc(100% - 80px)', left: '20px', margin: '30px' }}
-			/>
 		</>
 	);
 });

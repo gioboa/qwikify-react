@@ -8,7 +8,6 @@ import Button from "@mui/material/Button";
 export const MyButton = qwikify$(ButtonBase);
 export const MySlider = qwikify$(Slider);
 
-// { children }: { children?: ReactNode[] }
 const Island1Button = ({ onClick }: { onClick: () => void }) => {
   console.log("Island_1: React <Button/> Render");
   return (
@@ -23,6 +22,5 @@ function Display({ count }: { count: number }) {
   return <h1 className="react">Count: {count}</h1>;
 }
 
-// - { eagerness: "hover" }
 export const Island_1 = qwikify$(Island1Button, { eagerness: "hover" });
 export const Island_2 = qwikify$(Display);

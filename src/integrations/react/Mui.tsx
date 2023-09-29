@@ -2,8 +2,7 @@
 /** @jsxImportSource react */
 
 import { qwikify$ } from "@builder.io/qwik-react";
-import { ButtonBase, Slider, Box } from "@mui/material";
-import Button from "@mui/material/Button";
+import { ButtonBase, Slider, Button } from "@mui/material";
 
 export const MyButton = qwikify$(ButtonBase);
 export const MySlider = qwikify$(Slider);

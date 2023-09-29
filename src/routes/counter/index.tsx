@@ -19,8 +19,8 @@ export default component$(() => {
         <Island_2 count={count.value}></Island_2>
       </div>
       <div style={{ height: "1200px" }} />
-      <div style={{ padding: "0 200px 100px 200px" }} >
-      <MySlider client:visible />
+      <div style={{ padding: "0 200px 100px 200px" }}>
+        <MySlider client:visible />
       </div>
     </main>
   );
